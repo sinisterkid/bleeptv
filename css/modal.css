@@ -1,0 +1,187 @@
+/* modals */
+.modal-content .container {
+	width: 100%;
+	padding: 0;
+}
+.modal-header {
+	padding: 0;
+	max-height: 300px;
+    overflow: hidden;
+    border-bottom: none;
+}
+.modal-header .close {
+    position: absolute;
+    right: 0;
+    padding: 5px;
+    z-index: 100;
+}
+.modal-content {
+	border-radius: 0;
+	border: none;
+    background-color: #161616;
+	color: #777;
+}
+.modal .nav-tabs {
+    border-bottom: 1px solid #333;
+}
+.modal .nav-tabs>li {
+    margin-bottom: 0px; 
+}
+.modal .nav-tabs>li.active {
+	border-bottom: 2px solid #14abe0;
+}
+.modal .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border: none;
+    color: #fff;
+}
+.modal .nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #222;
+    border-radius: 0;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	background-color:#222;
+	border-radius: 0;
+}
+.nav-tabs>li>a:hover {
+    border: none;
+}
+.modal .nav>li>a {
+    padding: 10px 10px 5px 10px;
+    color: #999;
+}
+.row.franchise {
+	padding-top: 20px;
+}
+.card {
+    padding: 15px 0 10px 0;
+    border-bottom: 1px #333 solid;
+}
+.card-block {
+    padding: 0 40px;
+}
+.card-block .btn-primary {
+	width: 150px;
+}
+.card .resume-bar {
+    height: 2px;
+    background-color: #999;
+    width: 220px;
+    position: absolute;
+    right: 30px;
+    margin: 7px 0;
+}
+.card h5 {
+    margin-left: 15px;
+}
+.modal .tv-show .series {
+	border-bottom:1px solid #444;
+}
+.modal .episode h2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.modal .episode h4 {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+.modal .episode p {
+	margin: 0;
+}
+.modal h5 {
+	margin-top: 0;
+}
+.modal .movie .cast-crew {
+	border-top: 1px solid #ddd;
+}
+.modal .movie h2 {
+	margin-top: 10px;
+}
+.modal-dialog {
+	width: 800px;
+}
+.modal-body {
+	padding: 0 15px 15px 15px;
+}
+.modal-body a {
+	color: #fff;
+}
+.modal-body a:hover {
+	color:;
+}
+.series ul {
+	margin: 0;
+	padding: 0;
+}
+.series li {
+	display: inline;
+	list-style: none;
+}
+.series h3 {
+	display: inline;
+}
+.series .icon-heart {
+	margin-left: 15px;
+	font-size: 21px;
+}
+span.icon-heart:hover {
+    color: #FF4382;
+}
+.movie ul {
+	margin: 0;
+	padding: 0;
+}
+.movie li {
+	display: inline;
+	list-style: none;
+}
+.movie h3 {
+	display: inline;
+}
+.movie .icon-heart {
+	margin-left: 15px;
+	font-size: 21px;
+}
+.cast-crew {
+	border-top: 1px solid #444;
+}
+.cast-crew ul {
+	margin: 10px 0 0 0;
+	padding: 0;
+	height: 164px;
+}
+.cast-crew li {
+	position: relative;
+	list-style: none;
+	margin-right: 10px
+}
+.cast-crew img {
+	height: 100%;
+}
+.cast-name {
+    position: absolute;
+    height: 50px;
+    width: 111px;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.75);
+    padding: 10px;
+    display: inline;
+    color: #999;
+    line-height: 1.2em;
+    visibility: hidden;
+}
+.cast-crew li:hover .cast-name {
+	visibility: visible;
+}
+@media screen and (max-width: 768px) {
+.modal-dialog {
+	width: 600px;
+	margin: 30px auto;
+	}
+}
+@media screen and (max-width: 600px) {
+.modal-dialog {
+	width: 100%;
+	margin: 0;
+	}
+}

@@ -1,0 +1,133 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+h2 {
+	font-weight: normal;
+	color: #999;
+	margin: 20px 0 0 50px;
+}
+#MenuBar {
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    display: -webkit-box;
+    -webkit-box-pack: start;
+    -webkit-box-align: center;
+    min-width: 450px;
+    z-index: 10;
+    height: 60px;
+    background-color: #000;
+}
+#MenuBar>.button.menu {
+    width: 55px;
+    height: 60px;
+    border-right: 1px solid #444;
+    color: #ccc;
+}
+button {
+    background: 0 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.info-bar {
+    display: -webkit-box;
+    -webkit-box-pack: end;
+    -webkit-box-align: center;
+    -webkit-box-flex: 1;
+    height: 60px;
+}
+#MenuBar>.button.filter {
+    height: 60px;
+    padding-right: 20px;
+    color: #ccc;
+    vertical-align: middle;
+}
+#MenuBar>.button.close-button {
+    color: #f6921e;
+    border-left: 1px solid #444;
+    height: 60px;
+    width: 55px;
+}
+.movie-tile.asset {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    width: 200px;
+    text-align: center;
+}
+.movie-tile.asset, .movie-tile.folder {
+    height: 206px;
+    background-color: #444;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    -webkit-backface-visibility: hidden;
+}
+.tile-info {
+    position: relative;
+    background-color: #000;
+    color: #999;
+    text-align: left;
+    height: 56px;
+    padding: 5px 16px;
+    margin-top: 150px;
+    width: 200px;
+}
+.info-bar>.current-state {
+    color: #999;
+    margin-left: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    -webkit-box-flex: 1;
+}
+#MenuBar .button {
+    font-size: 21px;
+}
+/* Channel Ribbon */
+li.list-container-list-item {
+    position: absolute;
+}
+.channel {
+	cursor: pointer;
+	height: 85px;
+}
+.channel > .content {
+height: 100%;
+opacity: .5;
+background-repeat: no-repeat;
+background-position: center 45%;
+}
+.channel > .content:hover {
+opacity: 1;
+}
+.channel > .content.is-selected {
+background-color: 
+#0992CC;
+opacity: 1;
+height: 89%;
+background-position-y: 70%;
+}
+.channel > .content {
+height: 100%;
+opacity: .5;
+background-repeat: no-repeat;
+background-position: center 45%;
+}
+.channel > .content.is-selected::after {
+content: '';
+position: absolute;
+top: 89%;
+left: 50%;
+margin-left: -17px;
+width: 0;
+height: 0;
+border-top: solid 10px 
+#0992CC;
+border-left: solid 17px 
+transparent;
+border-right: solid 17px 
+transparent;
+}

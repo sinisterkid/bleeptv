@@ -1,0 +1,39 @@
+/* Example wrapper */
+.wrap {
+	margin:0;
+}
+
+/* Frame */
+.frame {
+	overflow: hidden;
+	margin-top: 10px;
+	position: relative;
+}
+.frame ul {
+	list-style: none;
+	height: 100%;
+	padding: 0;
+}
+.frame ul li {
+	float: left;
+	height: 164px;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+/* Controls */
+.controls {
+    width: 100%;
+}
+.prevPage, .prevPage2, .prevPage3, .nextPage, .nextPage2, .nextPage3 {
+	top: 50px;
+    position: absolute;
+}
+.nextPage, .nextPage2, .nextPage3 {
+    right: 0;
+}
+.frame .btn {
+	border-radius: 0;
+    background-color: rgba(255,255,255, 0.5);
+}

@@ -1,0 +1,13 @@
+/* The Movie DataBase Style */
+
+#ribbon {
+	width: 100%;
+	height: 100vh;
+	clear: both;
+}
+#ribbon .tile {
+	display: inline;
+	float: left;
+	width: 220px;
+	height: 100%;
+}

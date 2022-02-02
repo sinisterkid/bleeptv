@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Brooklyn Nine-Nine</title> 
+	</head>
+	<body>
+	   <div class="container">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-cancel-circle"></span></button>
+                <img src="/images/brooklyn-nine-nine-promo.jpg" class="hero">
+            </div>
+            <div class="modal-body tv-show">
+				<div class="row series">
+					<div class="col-md-12">
+						<div class="heart"></div>
+						<h3 class="modal-title"><a href="#">Brooklyn Nine-Nine</a></h3>
+						<h5>Action & Adventure 132min PG-13 2015</h5>
+					</div>
+					<div class="col-md-9">
+						<p>BROOKLYN NINE-NINE is an ensemble comedy about a talented-but-carefree detective, a by-the-book police captain and their precinct colleagues. While based in the workplace, the series is not really about the job – it’s about the men and women behind the badge.</p>
+					</div>
+					<div class="col-md-3">
+						<p><a href="#" class="btn btn-primary">Record Series</a></p>
+					</div>
+				</div>
+				<div class="row episode">
+					<div class="col-md-12">
+						<h2>New Episode</h2>
+					</div>
+					<div class="col-md-4">
+            			<div class="tile-hover movie-tile asset resume-tile">
+	            		  	<div class="resume-bar">
+						  		<div class="resume-point"></div>
+							</div>
+							<p><a class="venobox play-icon" data-type="youtube"  data-autoplay="true" href="https://youtu.be/v0QTdCHX_-c">
+						  		<img src="/images/brooklyn-nine-nine-episode.jpg">
+			              	</a></p>
+						</div>
+						<div class="bar"></div>
+					</div>
+					<div class="col-md-8">
+						<h4>Halloween IV</h4>
+						<p>It’s Halloween in the Nine-Nine, which can only mean one thing: heist time. <a href="#">More&hellip;</a></p>
+	             	</div>
+	            </div>
+	        </div>
+	    </div>
+	        <script type="text/javascript">
+		$(document).ready(function(){
+		
+		    /* default settings */
+		    $('.venobox').venobox(); 
+		
+		
+		    /* custom settings */
+		    $('.venobox_custom').venobox({
+		        framewidth: '400px',        // default: ''
+		        frameheight: '300px',       // default: ''
+		        border: '10px',             // default: '0'
+		        bgcolor: '#5dff5e',         // default: '#fff'
+		        titleattr: 'data-title',    // default: 'title'
+		        numeratio: true,            // default: false
+		        infinigall: true            // default: false
+		    });
+		
+		    /* auto-open #firstlink on page load */
+		    $("#firstlink").venobox().trigger('click');
+		});
+	</script>
+	</body>
+</html>
