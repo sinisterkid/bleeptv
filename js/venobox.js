@@ -368,7 +368,7 @@
 
     /* -------- LOAD VIMEO -------- */
     function loadVimeo(autoplay){
-      var pezzi = dest.split('/');
+      var pezzi = dest.split('/bleeptv/');
       var videoid = pezzi[pezzi.length-1];
       var stringAutoplay = autoplay ? "?autoplay=1" : "";
       content.html('<iframe class="venoframe" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0" src="//player.vimeo.com/video/'+videoid+stringAutoplay+'"></iframe>');
@@ -377,7 +377,7 @@
 
     /* -------- LOAD YOUTUBE -------- */
     function loadYoutube(autoplay){
-      var pezzi = dest.split('/');
+      var pezzi = dest.split('/bleeptv/');
       var videoid = pezzi[pezzi.length-1];
       var stringAutoplay = autoplay ? "?autoplay=1" : "";
       content.html('<iframe class="venoframe" webkitallowfullscreen mozallowfullscreen allowfullscreen src="//www.youtube.com/embed/'+videoid+stringAutoplay+'"></iframe>');
