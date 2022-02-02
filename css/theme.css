@@ -1,11 +1,11 @@
 /* Icons */
 @font-face {
   font-family: 'icomoon';
-  src:  url('/fonts/icomoon.eot?1zjlly');
-  src:  url('/fonts/icomoon.eot?1zjlly#iefix') format('embedded-opentype'),
-    url('/fonts/icomoon.ttf?1zjlly') format('truetype'),
-    url('/fonts/icomoon.woff?1zjlly') format('woff'),
-    url('/fonts/icomoon.svg?1zjlly#icomoon') format('svg');
+  src:  url('/bleeptv/fonts/icomoon.eot?1zjlly');
+  src:  url('/bleeptv/fonts/icomoon.eot?1zjlly#iefix') format('embedded-opentype'),
+    url('/bleeptv/fonts/icomoon.ttf?1zjlly') format('truetype'),
+    url('/bleeptv/fonts/icomoon.woff?1zjlly') format('woff'),
+    url('/bleeptv/fonts/icomoon.svg?1zjlly#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
