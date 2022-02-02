@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="noindex,nofollow"/>   
+    <link rel="icon" href="/bleep-b.png">
+
+    <title>My TV - bleep</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" type="text/css" href="/css/venobox.css"/>
+    <link rel="stylesheet" href="/css/horizontal.css">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/66bdbfdb37/Bleepstr/style.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+<!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand"><a href="/">&emsp;bleepTV</a></div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">My TV</a></li>
+            <li><a href="/live-tv">Live TV</a></li>
+            <li><a href="/tv-shows">Shows</a></li>
+            <li><a href="/movies">Movies</a></li>
+          </ul>
+            <ul class="nav navbar-nav navbar-right">
+            <li>
+              <form class="navbar-form"><input class="form-control" type="text" placeholder="Search">
+              </form>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="icon-bell2"></span><span class="badge">3</span></a>
+              <ul class="dropdown-menu">
+	              <li class="dropdown-header">New Episode</li>
+                <li><a href="#">Brooklyn Nine-Nine</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">New Episode</li>
+                <li><a href="#">The Daily Show</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Recording</li>
+                <li><a href="#">Bob's Burgers</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Profiles</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>  
+<!-- End Nav -->
+    <div class="container theme-showcase" role="main">
+	    
+<!-- Featured Banners -->
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+	          <div class="container">
+			  	<div class="carousel-caption">
+			  		<h1>Spectre</h1>
+			  		<p>Daniel Craig returns for his fourth installment as 007, this time facing a manipulative mastermind (Christoph Waltz) and his sinister organization.</p>
+            	</div>
+          	</div>
+            <img src="/images/feature/spectre.jpg" alt="First slide">
+          </div>
+          <div class="item">
+	          <div class="container">
+			  	<div class="carousel-caption">
+			  		<h1>Designated Survivor</h1>
+			  		<p>A hundred years from now, thousands of our descendants will be living on the Fourth Planet from the Sun.</p>
+
+            	</div>
+          	</div>
+            <img src="/images/feature/designatedsurvivor_s1_ep1_mh.jpg" alt="Second slide">
+          </div>
+          <div class="item">
+	          <div class="container">
+			  	<div class="carousel-caption">
+			  		<h1>Before the Flood</h1>
+			  		<p>Academy Award® winner Leonardo DiCaprio meets with world leaders to tackle climate change in this compelling documentary from director Fisher Stevens.</p>	
+            	</div>
+          	</div>
+            <img src="/images/feature/before-the-flood-mq-v2.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+<!-- End Featured Banners -->
+
+<!-- Ribbon -->
+      <h2>Continue Watching</h2>
+      <div class="wrap">
+<div class="frame basic">
+				<ul class="clearfix">
+ <li>
+            	<div class="tile-hover movie-tile asset resume-tile">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/v0QTdCHX_-c">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/brooklyn-nine-nine-thumb.jpg">
+	              	</a>
+              	</div>
+		
+				<a data-toggle="modal" class="" href="/watch/brooklyn-nine-nine/brooklyn-nine-nine.html" data-target="#b99-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>Brooklyn Nine-Nine</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+			</li>
+			<li>
+            	<div class="tile-hover movie-tile asset resume-tile">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/k2hsQSY9s2M">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/the-daily-show-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/the-daily-show/the-daily-show.html" data-target="#daily-show-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>The Daily Show</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+			</li>
+			<li>
+				<div class="tile-hover movie-tile asset resume-tile">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://www.youtu.be/89RQpAZlU7Q">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/adventure-time-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/adventure-time/adventure-time.html" data-target="#adventure-time-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>Adventure Time</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+            <li>
+				<div class="tile-hover movie-tile asset resume-tile">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/gOW_azQbOjw">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/rogue-nation-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/mission-impossible/rogue-nation.html" data-target="#rogue-nation-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>MI: Rogue Nation</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+            <li>
+				<div class="tile-hover movie-tile asset resume-tile">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/Q_qhLRUh66k">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/rocky-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/rocky/rocky.html" data-target="#rocky-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>Rocky</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+            <li>
+				<div class="tile-hover movie-tile asset resume-tile">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/v0QTdCHX_-c">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/the-daily-show-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/the-daily-show/the-daily-show.html" data-target="#detailModal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>The Daily Show</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+
+            </li>
+            <li>
+				<div class="tile-hover movie-tile asset resume-tile">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/v0QTdCHX_-c">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/the-daily-show-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/the-daily-show/the-daily-show.html" data-target="#detailModal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>The Daily Show</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+
+            </li>
+
+          </ul>
+          			<div class="controls center">
+				<button class="btn prevPage"><span class="icon-chevron-left"></span></button>
+				<button class="btn nextPage"><span class="icon-chevron-right"></span></button>
+			</div>
+        </div>
+      </div>
+<!-- end ribbon -->
+<!-- ribbon -->
+      <h2>Favorites</h2>
+      <div class="wrap">
+<div class="frame basic2">
+		<ul class="clearfix">
+            <li>
+				<div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://www.youtu.be/W0VA3e2Hyyk">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/archer-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/archer/archer.html" data-target="#archer-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>Archer</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+            <li>
+              <div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/7WRxEY8o3kc">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/seinfeld-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/seinfeld/seinfeld.html" data-target="#seinfeld-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>Seinfeld</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>            </li>
+            <li>
+              <div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/xf0YgnV0mdg">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/the-last-man-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/the-last-man-on-earth/the-last-man-on-earth.html" data-target="#last-man-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>The Last Man On Earth</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+            <li>
+              <div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/4ctK1aoWuqY">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/rick-and-morty-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/rick-and-morty/rick-and-morty.html" data-target="#rick-and-morty-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>Rick and Morty</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+            <li>
+            	<div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/O9Sz2TGXuiM">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/dances-with-wolves-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/dances-with-wolves/dances-with-wolves.html" data-target="#dances-with-wolves-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>Dances With Wolves</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>  
+            <li>
+              <div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/Of7LHW5cCBQ">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/goldeneye-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/goldeneye/goldeneye.html" data-target="#goldeneye-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>Goldeneye</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+            <li>
+             <div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/v7OVqXm7_Pk">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/interstellar-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/interstellar/interstellar.html" data-target="#interstellar-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>Interstellar</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a></li>
+          </ul>
+          <div class="controls center">
+			<button class="btn prevPage2"><span class="icon-chevron-left"></span></button>
+			<button class="btn nextPage2"><span class="icon-chevron-right"></span></button>
+		</div>
+        </div>
+      </div>
+<!-- end ribbon -->
+<!-- ribbon -->
+      <h2>My Channels</h2>
+      <div class="wrap">
+<div class="frame basic4">
+		<ul class="clearfix">
+<li>
+              <div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+	              	<a class="venobox channel" data-type="youtube" data-autoplay="true" href="https://www.youtube.com/embed/jJZlnO4UT1g?start=10;rel=0&amp;controls=0&amp;showinfo=0;autoplay=1;">
+	              	<div class="play-icon"></div>
+	              	<img src="/images/channel/espn.svg">
+	              	</a>
+              	</div>
+				<a class="venobox channel" data-type="youtube" data-autoplay="true" href="https://www.youtube.com/embed/jJZlnO4UT1g?start=10;rel=0&amp;controls=0&amp;showinfo=0;autoplay=1;">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>SportsCenter</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="live separated">Live</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Sports</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+            <li>
+              <div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox channel" data-type="youtube"  data-autoplay="true" href="https://www.youtube.com/embed/Mi1ltzaxno4?start=10;rel=0&amp;controls=0&amp;showinfo=0;autoplay=1;">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/channel/tbs.svg">
+	              	</a>
+              	</div>
+				<a class="venobox channel" data-type="youtube"  data-autoplay="true" href="https://www.youtube.com/embed/Mi1ltzaxno4?start=10;rel=0&amp;controls=0&amp;showinfo=0;autoplay=1;">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>The King of Queens</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="live separated">Live</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+            <li>
+              <div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox channel" data-type="youtube"  data-autoplay="true" href="https://www.youtube.com/embed/R3_sKOArEUo?start=10;rel=0&amp;controls=0&amp;showinfo=0;autoplay=1;">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/channel/cnn.svg">
+	              	</a>
+              	</div>
+				<a class="venobox channel" data-type="youtube"  data-autoplay="true" href="https://www.youtube.com/embed/R3_sKOArEUo?start=10;rel=0&amp;controls=0&amp;showinfo=0;autoplay=1;">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>Inside Politics</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="live separated">Live</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">News</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+<!-- end ribbon -->
+<!-- ribbon -->
+      <h2>You Might Like</h2>
+      <div class="wrap">
+<div class="frame basic3">
+		<ul class="clearfix">
+<li>
+              <div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/E58qY9-ID4A">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/malala-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/malala/malala.html" data-target="#malala-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>He Named Me Malala</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+            <li>
+              <div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/UMqseBSxYc0">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/spectre-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/spectre/spectre.html" data-target="#spectre-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>Spectre</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+            <li>
+              <div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/gOW_azQbOjw">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/rogue-nation-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/mission-impossible/rogue-nation.html" data-target="#rogue-nation-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>MI: Rogue Nation</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+            <li>
+              <div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/z7RFwwfwuJM">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/agents-of-shield-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/agents-of-shield/agents-of-shield.html" data-target="#shield-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>Agents of S.H.I.E.L.D.</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+            <li>
+              <div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/dg0XLXe8fZI">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/elementary-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/elementary/elementary.html" data-target="#elementary-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>Elementary</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+            <li>
+              <div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/n-7K_OjsDCQ">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/mockingjay-part2-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/mockingjay-part2/mockingjay-part2.html" data-target="#mockingjay-part2-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>Mockingjay Part 2</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+            <li>
+              <div class="tile-hover movie-tile asset">
+	            	<div class="resume-bar">
+						<div class="resume-point"></div>
+					</div>
+
+	              	<a class="venobox" data-type="youtube"  data-autoplay="true" href="https://youtu.be/3yEixcQrABU">
+		              	<div class="play-icon"></div>
+	              	<img src="/images/knock-knock-thumb.jpg">
+	              	</a>
+              	</div>
+				<a data-toggle="modal" class="" href="/watch/knock-knock/knock-knock.html" data-target="#knock-knock-modal">
+					<div class="tile-info">
+						<div class="tile-title">
+							<span>Knock Knock</span>  
+              			</div>
+			  			<p class="info-details">
+			  				<span class="info-rating separated">TV-14</span>
+			  				<span class="info-duration separated">30min</span>     
+			  				<span class="info-genres separated">Comedy</span>                     
+              			</p>
+            		</div>
+           		</a>
+            </li>
+
+          </ul>
+          <div class="controls center">
+			<button class="btn prevPage3"><span class="icon-chevron-left"></span></button>
+			<button class="btn nextPage3"><span class="icon-chevron-right"></span></button>
+		</div>
+        </div>
+      </div>
+<!-- end ribbon -->
+<!-- Modal Details -->
+<div class="modal fade" id="b99-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="dail-show-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="daily-show-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="rogue-nation-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="rocky-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="adventure-time-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="last-man-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="archer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="seinfeld-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="rick-and-morty-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="dances-with-wolves-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="shield-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="elementary-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="mockingjay-part2-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="knock-knock-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="spectre-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="malala-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="interstellar-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="goldeneye-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+<!-- End Modals -->
+</div> 
+<!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/js/ie10-viewport-bug-workaround.js"></script>
+	
+	<!-- Venbox -->
+    <script type="text/javascript" src="/js/venobox.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+		
+		    /* default settings */
+		    $('.venobox').venobox(); 
+		
+		
+		    /* custom settings */
+		    $('.venobox_custom').venobox({
+		        framewidth: '400px',        // default: ''
+		        frameheight: '300px',       // default: ''
+		        border: '10px',             // default: '0'
+		        bgcolor: '#5dff5e',         // default: '#fff'
+		        titleattr: 'data-title',    // default: 'title'
+		        numeratio: true,            // default: false
+		        infinigall: true            // default: false
+		    });
+		
+		    /* auto-open #firstlink on page load */
+		    $("#firstlink").venobox().trigger('click');
+		});
+	</script>
+
+	<!-- Sly Slider -->
+	<script src="/js/plugins.js"></script>
+	<script src="/js/sly.min.js"></script>
+	<script src="/js/horizontal.js"></script>
+	
+  </body>
+</html>
