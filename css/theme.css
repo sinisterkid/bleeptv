@@ -200,7 +200,7 @@ html {
     -webkit-backface-visibility: hidden;
 }
 .play-icon {
-    background-image: url(/images/icons/play-icon.svg);
+    background-image: url(/bleeptv/images/icons/play-icon.svg);
     background-repeat: no-repeat;
     padding: 0 0 80px 0;
     vertical-align: top;
